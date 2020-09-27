@@ -42,6 +42,7 @@
     font-size: 20px;
     color: #2d2e2e;
     font-weight: 700;
+    text-decoration: none;
 }
 
 

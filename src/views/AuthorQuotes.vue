@@ -4,7 +4,7 @@
       <div class="right-i">
         <ul class="navigation">
           <li>
-            <a class="link-item" href="/"> Random </a>
+            <a class="link-item" href="/"> Random <i class="fas fa-random"></i> </a>
           </li>
         </ul>
       </div>
