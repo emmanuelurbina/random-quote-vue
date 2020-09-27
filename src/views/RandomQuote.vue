@@ -11,6 +11,7 @@
     </nav>
     <QuoteComponent :quote="quote" />
     <InfoQuote :quote="quote" />
+    <FooterComponent />
   </section>
 </template>
 
@@ -18,6 +19,7 @@
 import GetQuote from "../random.js"
 import QuoteComponent from "../components/QuoteComponent.vue"
 import InfoQuote from "../components/InfoQuote.vue"
+import FooterComponent from "../components/FooterComponent.vue"
 export default {
     name:"RandomQuote",
     data(){
@@ -27,7 +29,8 @@ export default {
     },
     components:{
         QuoteComponent,
-        InfoQuote
+        InfoQuote,
+        FooterComponent
     },
     methods: {
       setQuote: function(){

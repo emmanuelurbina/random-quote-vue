@@ -30,7 +30,7 @@
 .right-i {
     position: absolute;
     top: 20px;
-    right: 20px;
+    right: 3em;
 }
 .navigation {
     list-style: none;

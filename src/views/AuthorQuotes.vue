@@ -15,6 +15,7 @@
       v-bind:quote="quote"
       v-bind:key="index"
     />
+    <FooterComponent />
   </section>
 </template>
 
@@ -22,6 +23,7 @@
 import GetQuotesAuthor from "../authors.js";
 import QuoteComponent from "../components/QuoteComponent.vue";
 import AuthorName from "../components/AuthorName.vue";
+import FooterComponent from "../components/FooterComponent.vue"
 export default {
   name: "AuthorQuotes",
   data() {
@@ -29,7 +31,7 @@ export default {
       quotes: [],
     };
   },
-  components: { QuoteComponent, AuthorName },
+  components: { QuoteComponent, AuthorName, FooterComponent },
   methods: {
     setQuotes: function () {
       GetQuotesAuthor(this.$route.params.author).then((resp) => {
