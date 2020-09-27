@@ -16,10 +16,12 @@
       v-bind:key="index"
     />
     <FooterComponent />
+    <nprogress-container></nprogress-container>
   </section>
 </template>
 
 <script>
+import NprogressContainer from "vue-nprogress/src/NprogressContainer";
 import GetQuotesAuthor from "../authors.js";
 import QuoteComponent from "../components/QuoteComponent.vue";
 import AuthorName from "../components/AuthorName.vue";
@@ -31,7 +33,7 @@ export default {
       quotes: [],
     };
   },
-  components: { QuoteComponent, AuthorName, FooterComponent },
+  components: { NprogressContainer, QuoteComponent, AuthorName, FooterComponent },
   methods: {
     setQuotes: function () {
       GetQuotesAuthor(this.$route.params.author).then((resp) => {
